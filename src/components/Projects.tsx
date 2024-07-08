@@ -7,9 +7,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { useTheme } from "@mui/material/styles";
 import { Button } from "@mui/material";
-import img1 from "../assets/projects/image_processing20220616-8811-dnmt4f.jpg";
-import img2 from "../assets/projects/Yellow and Green Bold Geometric Business Agency Facebook Post (2).png";
-import img3 from "../assets/projects/note app.png";
+import img1 from "../assets/projects/project1.jpg";
+import img2 from "../assets/projects/project2.png";
+import img3 from "../assets/projects/project3.jpg";
+import img4 from "../assets/projects/Project4.png";
+import img5 from "../assets/projects/project5.png";
+import img6 from "../assets/projects/Project6.png";
 
 const projects = [
   {
@@ -30,17 +33,17 @@ const projects = [
   {
     title: "Project Two",
     description: "Description of project two...",
-    image: img3,
+    image: img4,
   },
   {
     title: "Project One",
     description: "Description of project one...",
-    image: img2,
+    image: img5,
   },
   {
     title: "Project Two",
     description: "Description of project two...",
-    image: img1,
+    image: img6,
   },
   // Add more projects as needed
 ];
