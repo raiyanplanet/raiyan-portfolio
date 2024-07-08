@@ -21,7 +21,7 @@ const ClientReviews: React.FC<ClientReviewsProps> = ({ reviews }) => {
   const demoReviews: ClientReview[] = [
     {
       id: 1,
-      clientName: "John Doe",
+      clientName: "John Devit",
       position: "Senior Developer",
       reviewText:
         "Excellent service! They delivered exactly what I needed on time.",
