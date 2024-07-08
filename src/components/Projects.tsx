@@ -12,7 +12,7 @@ import img2 from "../assets/projects/project2.png";
 import img3 from "../assets/projects/project3.jpg";
 import img4 from "../assets/projects/Project4.png";
 import img5 from "../assets/projects/project5.png";
-import img6 from "../assets/projects/Project6.png";
+import img6 from "../assets/projects/project6.png";
 
 const projects = [
   {
