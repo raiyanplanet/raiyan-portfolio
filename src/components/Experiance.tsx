@@ -40,13 +40,19 @@ const Experiance = () => {
         minHeight={"100vh"}
         padding={{ xs: "20px 20px", lg: "50px 50px" }}
         display={"flex"}
+        color={"#fff"}
         flexDirection={"column"}
         gap={3}
         alignItems={"center"}
         justifyContent={"center"}
-        bgcolor={"#f2f2f2"}
+        bgcolor={"#060913"}
       >
-        <Typography variant="h4" fontWeight={700}>
+        <Typography
+          variant="h4"
+          fontWeight={700}
+          textTransform={"uppercase"}
+          color={"#49E9C7"}
+        >
           Experience
         </Typography>
         <Box
@@ -62,15 +68,20 @@ const Experiance = () => {
               display={"flex"}
               flexDirection={{ xs: "column", lg: "row" }}
               alignItems={{ xs: "center", lg: "start" }}
+              border={"1px solid #3C414C"}
               borderRadius={2}
-              bgcolor={"#fff"}
+              bgcolor={"#0C0F19"}
               gap={"50px"}
               width={"100%"}
               padding={"20px 20px"}
               boxShadow={4}
               sx={{
                 transition: "200ms",
-                ":hover": { bgcolor: "#1c273d", scale: "1.01", color: "#fff" },
+                ":hover": {
+                  borderColor: "#49E9C7",
+                  scale: "1.01",
+                  color: "#fff",
+                },
               }}
             >
               <Avatar
@@ -96,7 +107,11 @@ const Experiance = () => {
                 >
                   {experience.position}
                 </Typography>
-                <Typography variant="h6" textTransform={"uppercase"}>
+                <Typography
+                  variant="h6"
+                  textTransform={"uppercase"}
+                  color={"#B4B6BF"}
+                >
                   {experience.companyname}
                 </Typography>
                 <Typography variant="h6" fontWeight={400}>
@@ -111,7 +126,7 @@ const Experiance = () => {
                         borderRadius: "3px",
                         color: "#fff",
                         padding: "1px",
-                        bgcolor: "black",
+                        bgcolor: "#3C414C",
                         margin: "10",
                       }}
                     />
@@ -125,7 +140,7 @@ const Experiance = () => {
                         borderRadius: "3px",
                         color: "#fff",
                         padding: "1px",
-                        bgcolor: "black",
+                        bgcolor: "#3C414C",
                         margin: "10",
                       }}
                     />
@@ -139,7 +154,7 @@ const Experiance = () => {
                         borderRadius: "3px",
                         color: "#fff",
                         padding: "1px",
-                        bgcolor: "black",
+                        bgcolor: "#3C414C",
                         margin: "10",
                       }}
                     />

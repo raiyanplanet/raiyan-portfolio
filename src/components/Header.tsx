@@ -9,9 +9,9 @@ import { Link } from "react-scroll";
 import { Box } from "@mui/material";
 
 const StyledAppBar = styled(AppBar)({
-  backgroundColor: "#fff",
+  backgroundColor: "#060913",
   boxShadow: "none",
-  borderBottom: "1px solid #e0e0e0",
+  borderBottom: "1px solid #1C1E28",
   position: "sticky",
   top: 0,
   zIndex: 1100, // Ensure the header is above other content
@@ -31,14 +31,16 @@ const Logo = styled("div")({
 const NavItems = styled("div")({
   display: "flex",
   alignItems: "center",
+  transition: "300ms",
   "& a": {
     margin: 8, // Use the equivalent of theme.spacing(1)
     textDecoration: "none",
-    color: "#000",
+    color: "#fff",
     fontWeight: 500,
+    Transition: "300ms",
     cursor: "pointer",
     "&:hover": {
-      color: "#111827",
+      color: "#49E9C7",
     },
   },
 });
@@ -50,7 +52,7 @@ const Header: React.FC = () => {
         <IconButton edge="start" color="inherit" aria-label="menu">
           <Logo>
             {/* <LogoImage src="" alt="logo" width={40} height={40} /> */}
-            <Typography variant="h4" fontWeight={900} color="#111827">
+            <Typography variant="h4" fontWeight={900} color="#49E9C7">
               RAIYAN
             </Typography>
           </Logo>
@@ -101,10 +103,25 @@ const Header: React.FC = () => {
         </Box>
         <Button
           variant="contained"
-          disableElevation
-          disableRipple
-          disableTouchRipple
           color={"primary"}
+          disableRipple
+          disableElevation
+          disableFocusRipple
+          disableTouchRipple
+          sx={{
+            fontSize: "16px",
+            boxShadow: "none",
+            display: "flex",
+            gap: "10px",
+            border: "1px solid #1C1E28",
+            borderRadius: "6px",
+            padding: "7px 15px",
+            ":hover": {
+              bgcolor: "#0F111B",
+              borderColor: "#49E9C7",
+              boxShadow: "none",
+            },
+          }}
         >
           Hire Me
         </Button>

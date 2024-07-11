@@ -12,38 +12,42 @@ import img2 from "../assets/projects/project2.png";
 import img3 from "../assets/projects/project3.jpg";
 import img4 from "../assets/projects/Project4.png";
 import img5 from "../assets/projects/project5.png";
-import img6 from "../assets/projects/project6.png";
+// import img6 from "../assets/projects/project6.png";
+import img7 from "../assets/projects/Project7.png";
 
 const projects = [
   {
-    title: "Make E-Commerce website using React and Tailwind css",
+    title: "Maked E-Commerce website using React and Tailwind css",
     description: "Make E-Commerce website using React and Tailwind css",
     image: img1,
   },
   {
-    title: "Project Two",
-    description: "Description of project two...",
+    title: "Created Note Application using React and Tailwind css",
+    description: "Created Note Application using React and Tailwind css",
     image: img2,
   },
   {
-    title: "Parsonal Note application create using React and Material UI",
-    description: "Parsonal Note application create using React and Material UI",
+    title: "Build E-Commerce website using React and Material UI",
+    description: "Build E-Commerce website using React and Material UI",
     image: img3,
   },
   {
-    title: "Project Two",
-    description: "Description of project two...",
+    title:
+      "Created Modern dark Engineeering Website using React and Tailwind CSS",
+    description:
+      "Created Modern dark Engineeering Website using React and Tailwind CSS",
     image: img4,
   },
   {
-    title: "Project One",
+    title: "Created E-commerce website with React and Tailwind css",
     description: "Description of project one...",
     image: img5,
   },
   {
-    title: "Project Two",
-    description: "Description of project two...",
-    image: img6,
+    title:
+      "Created Photographar portfolio website using React and Tailwind css",
+    description: "Photographar portfolio website using React and Tailwind css",
+    image: img7,
   },
   // Add more projects as needed
 ];
@@ -55,16 +59,19 @@ const Projects: React.FC = () => {
     <Box
       display={"flex"}
       flexDirection={"column"}
+      gap={5}
+      bgcolor={"#060913"}
       padding={{ xs: "0px 20px", lg: "50px 50px" }}
     >
       <Typography
         variant="h4"
         fontWeight={600}
         padding={"20px 0"}
-        color={"#111827"}
+        color={"#fff"}
         align="center"
+        textTransform={"uppercase"}
       >
-        My Latest Projects
+        My Latest <span style={{ color: "#49E9C7" }}>Projects</span>
       </Typography>
       <Grid container spacing={4}>
         {projects.map((project, index) => (
@@ -73,7 +80,15 @@ const Projects: React.FC = () => {
               sx={{
                 transition: "200ms",
                 boxShadow: "5",
-                borderRadius: 2,
+                paddingBottom: "30px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: "2",
+                border: "1px solid #3C414C",
+                bgcolor: "#0C0F19",
+                borderRadius: 5,
                 "&:hover": {
                   transform: "translateY(-8px)",
                   boxShadow: theme.shadows[10],
@@ -82,7 +97,7 @@ const Projects: React.FC = () => {
             >
               <CardMedia
                 component="img"
-                height={"10px"}
+                height={"30%"}
                 image={project.image}
                 alt={project.title}
               />
@@ -91,8 +106,9 @@ const Projects: React.FC = () => {
                   display: "flex",
                   flexDirection: "column",
                   gap: "10px",
-                  justifyContent: "space-between",
+                  justifyContent: "center",
                   height: "220px",
+                  color: "#fff",
                 }}
               >
                 <Box>
@@ -104,16 +120,31 @@ const Projects: React.FC = () => {
                   >
                     {project.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography variant="body2" color={"#cccccc"}>
                     {project.description}
                   </Typography>
                 </Box>
                 <Button
                   variant="contained"
+                  color={"primary"}
+                  disableRipple
                   disableElevation
                   disableFocusRipple
-                  disableRipple
                   disableTouchRipple
+                  sx={{
+                    fontSize: "16px",
+                    boxShadow: "none",
+                    display: "flex",
+                    gap: "10px",
+                    border: "1px solid #1C1E28",
+                    borderRadius: "6px",
+                    padding: "10px 15px",
+                    ":hover": {
+                      bgcolor: "#0F111B",
+                      borderColor: "#49E9C7",
+                      boxShadow: "none",
+                    },
+                  }}
                 >
                   View more
                 </Button>

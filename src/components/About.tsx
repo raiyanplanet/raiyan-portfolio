@@ -7,13 +7,15 @@ const About = () => {
     <>
       <Box
         minHeight={"100vh"}
+        bgcolor={"#060913"}
+        color={"#fff"}
         width={"100%"}
         display={"flex"}
         flexDirection={{ xs: "column", lg: "row" }}
         alignItems={"center"}
         justifyContent={"space-between "}
         gap={{ lg: "0", xs: "50px" }}
-        padding={"20px 50px"}
+        padding={{ lg: "20px 50px", xs: "50px 50px" }}
       >
         <Box
           width={{ lg: "50%", xs: "30%" }}
@@ -23,7 +25,11 @@ const About = () => {
         >
           <Avatar
             src={myphoto}
-            sx={{ width: "350px", height: "350px" }}
+            sx={{
+              width: "350px",
+              height: "350px",
+              border: "5px solid #49E9C7",
+            }}
           ></Avatar>
         </Box>
         <Box
@@ -37,20 +43,20 @@ const About = () => {
           <Typography
             variant="h3"
             fontSize={{ xs: "35px", lg: "40px" }}
-            color={"#111827"}
+            color={"#E1E5E9"}
             fontWeight={700}
           >
             I am Full Stack <br />
-            Web Application Developer
+            <span style={{ color: "#49E9C7" }}>Web Application Developer</span>
           </Typography>
-          <Typography color={"#333333"}>
+          <Typography color={"#cccccc"}>
             Hi there! I'm Raiyan, a passionate Web Developer with years of
             experience in the industry. I've helped countless businesses like
-            yours achieve their goals and I'm excited to work with you. <br />A
-            passionate web developer with a strong background in creating
-            visually stunning and highly functional websites. With 2 years of
-            experience, I specialize in crafting responsive and user-friendly
-            web solutions that deliver exceptional results.
+            yours achieve their goals and I'm excited to work with you. <br />
+            <br />A passionate web developer with a strong background in
+            creating visually stunning and highly functional websites. With 2
+            years of experience, I specialize in crafting responsive and
+            user-friendly web solutions that deliver exceptional results.
           </Typography>
           <Button
             variant="contained"
@@ -64,10 +70,12 @@ const About = () => {
               boxShadow: "none",
               display: "flex",
               gap: "10px",
+              border: "1px solid #1C1E28",
               borderRadius: "6px",
               padding: "10px 15px",
               ":hover": {
-                bgcolor: "#1c273d",
+                bgcolor: "#0F111B",
+                borderColor: "#49E9C7",
                 boxShadow: "none",
               },
             }}
@@ -85,7 +93,11 @@ const About = () => {
         >
           <Avatar
             src={myphoto}
-            sx={{ width: "350px", height: "350px" }}
+            sx={{
+              width: "350px",
+              height: "350px",
+              border: "4px solid #49E9C7",
+            }}
           ></Avatar>
         </Box>
       </Box>

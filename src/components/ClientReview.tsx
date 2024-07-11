@@ -62,9 +62,9 @@ const ClientReviews: React.FC<ClientReviewsProps> = ({ reviews }) => {
 
   return (
     <Box
-      mt={4}
-      mb={4}
-      padding={{ xs: "0 20px ", lg: "0px 50px" }}
+      padding={{ xs: "20px 20px ", lg: "0px 50px" }}
+      bgcolor={"#060913"}
+      color={"#fff"}
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"center"}
@@ -74,11 +74,11 @@ const ClientReviews: React.FC<ClientReviewsProps> = ({ reviews }) => {
       <Typography
         variant="h4"
         fontWeight={600}
-        color={"#111827"}
         align="center"
+        textTransform={"uppercase"}
         padding={"20px 0"}
       >
-        Client Reviews
+        Client <span style={{ color: "#49E9C7" }}>Reviews</span>
       </Typography>
       <Grid container spacing={3} justifyContent="center">
         {reviewsToDisplay.map((review) => (
@@ -86,17 +86,24 @@ const ClientReviews: React.FC<ClientReviewsProps> = ({ reviews }) => {
             <Paper
               elevation={3}
               sx={{
-                bgcolor: "#111827",
+                bgcolor: "#0C0F19",
+                color: "#fff",
                 p: 2,
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "start",
                 gap: "10px",
+                border: "1px solid #3C414C",
                 borderRadius: "10px",
                 justifyContent: "space-between",
                 transition: "200ms",
-                ":hover": { bgcolor: "#fff", scale: "1.001", color: "#000" },
+                cursor: "pointer",
+                ":hover": {
+                  bgcolor: "#0F111B",
+                  scale: "1.05",
+                  borderColor: "#49E9C7",
+                },
               }}
             >
               <Box
@@ -104,7 +111,7 @@ const ClientReviews: React.FC<ClientReviewsProps> = ({ reviews }) => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "start",
-                  bgcolor: "#fff",
+                  border: "1px solid #3C414C",
                   borderRadius: "10px",
                   padding: "10px",
                   gap: "10px",
@@ -137,14 +144,6 @@ const ClientReviews: React.FC<ClientReviewsProps> = ({ reviews }) => {
                   display={"flex"}
                   flexDirection={"column"}
                   alignItems={"start"}
-                  sx={{
-                    ":hover": {
-                      bgcolor: "#fff",
-                      scale: "1.001",
-                      color: "#000",
-                    },
-                    transition: "200ms",
-                  }}
                 >
                   <Typography variant="h6">{review.clientName}</Typography>
                   <Typography variant="subtitle1" color={"#d1d1d1"}>

@@ -15,23 +15,15 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <Box
-      sx={{
-        py: 3,
-        px: 2,
-        mt: "auto",
-        backgroundColor: (theme) =>
-          theme.palette.mode === "light"
-            ? theme.palette.grey[200]
-            : theme.palette.grey[800],
-      }}
-    >
+    <Box bgcolor={"#060913"} color={"#fff"}>
       <Container maxWidth="sm">
         <Box
           display={"flex"}
           flexDirection={"column"}
+          padding={4}
           alignItems={"center"}
           justifyContent={"center"}
+          textAlign={"center"}
           gap={1}
         >
           <Typography variant="body1">
@@ -42,56 +34,56 @@ const Footer: React.FC = () => {
             <IconButton
               aria-label="facebook"
               component="a"
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/tawsifulalamraiyan"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook />
+              <FaFacebook color="#fff" />
             </IconButton>
             <IconButton
               aria-label="instagram"
               component="a"
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/_raiyan.n_"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram />
+              <FaInstagram color="#fff" />
             </IconButton>
             <IconButton
               aria-label="linkedin"
               component="a"
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/tawsiful-alam-raiyan"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin />
+              <FaLinkedin color="#fff" />
             </IconButton>
             <IconButton
               aria-label="youtube"
               component="a"
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/raiyanplanet"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube />
+              <FaYoutube color="#fff" />
             </IconButton>
             <IconButton
               aria-label="dribbble"
               component="a"
-              href="https://www.dribbble.com/"
+              href="https://www.dribbble.com/raiyanplanet"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaDribbble />
+              <FaDribbble color="#fff" />
             </IconButton>
             <IconButton
               aria-label="github"
               component="a"
-              href="https://www.github.com/"
+              href="https://www.github.com/raiyanplanet"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub />
+              <FaGithub color="#fff" />
             </IconButton>
           </Grid>
         </Box>
