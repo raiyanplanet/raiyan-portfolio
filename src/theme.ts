@@ -10,7 +10,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "system-ui, Arial, sans-serif",
+    fontFamily: "IBM Plex Mono, Poppins, sans-serif",
   },
 });
 

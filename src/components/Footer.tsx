@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             <IconButton
               aria-label="linkedin"
               component="a"
-              href="https://www.linkedin.com/tawsiful-alam-raiyan"
+              href="https://www.linkedin.com/in/tawsiful-alam-raiyan/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
             <IconButton
               aria-label="youtube"
               component="a"
-              href="https://www.youtube.com/raiyanplanet"
+              href="https://www.youtube.com/@raiyandesk"
               target="_blank"
               rel="noopener noreferrer"
             >

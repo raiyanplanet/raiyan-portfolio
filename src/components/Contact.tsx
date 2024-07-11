@@ -5,7 +5,7 @@ import {
   TextareaAutosize,
   Typography,
 } from "@mui/material";
-import emailimg from "../assets/New message-cuate.png";
+import emailimg from "../assets/New message-cuate.svg";
 
 const Contact = () => {
   return (
